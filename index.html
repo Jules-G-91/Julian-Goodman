@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body id="home">
+    <div class="topnav">
+        <a class="active"><img class="navJ" src="./Imgs/J-img.png" alt="An image of a J"></a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="#work">Work</a>
+            <a href="#aboutMe">About</a>
+            <a href="#contactMe">Contact</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <nav class="navWrapper">
+        <div class="navBox">    
+            <div class="navImg">
+                <img class="j" src="./Imgs/Logo_Green" alt="An image of a letter J"/>
+            </div>
+            <div class="navItems" >            
+                <ul id="myDIV">
+                    <li>
+                        <a class="btn" href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a class="btn" href="#work">Work</a>
+                    </li>
+                    <li>
+                        <a class="btn" href="#aboutMe">About</a>
+                    </li>
+                    <li>
+                        <a class="btn" href="#contactMe">Contact</a>
+                    </li>
+                </ul>
+            </div>       
+        </div>
+    </nav>
+
+
+    <section class="showcase" id="home"> 
+        <div>
+            <img src="./Imgs/Logo_Green" alt="An image of a letter J">
+            <h1>Julian Goodman</h1>
+            <h3>Web Developer</h3>
+        </div>
+    </section>
+
+
+    <div id="work" class="galleryContainerFlex">
+        <div class="galleryContainer">
+            <div class="galleryImage image-one">
+                <img  src="https://picsum.photos/750/750" alt="Image">
+            </div>
+
+            <div class="galleryImage image-two">
+                <img src="https://picsum.photos/750/750" alt="Image">
+            </div>
+
+            <div class="galleryImage image-three">
+                <img src="https://picsum.photos/750/750" alt="Image">
+            </div>
+
+            <div class="galleryImage image-four">
+                <img src="https://picsum.photos/750/750" alt="Image">
+            </div>
+
+            <div  class="galleryImage image-five"> 
+                <img src="https://picsum.photos/750/750" alt="Image">
+            </div>
+
+            <div  class="galleryImage image-six">
+                <img src="https://picsum.photos/750/750" alt="Image">
+            </div>
+        </div>
+    </div>
+
+
+    <section id="aboutMe">
+        <div class="aboutMe">        
+            <div class="aboutMe-face">      
+                <img src="./Imgs/Face.jpg" alt="Image of Julian">   
+            </div>
+            <div class="aboutMe-bio">
+                <p>
+                    Hello. 
+                    <br><br>
+                    Thank you for taking the time to come and visit my website and get to know a little bit about me.
+                    <br><br>
+                    My name is <span>Julian Goodman</span> - I am a Front End Web Developer.
+                    <br><br>
+                    My love for coding / programming began in 2018 when I suddenly thought to myself "I wonder what coding look's like?" - and now I'm here, coding for real and eagerly going after a career in web development. 
+                    <br><br>
+                    Now, I've always loved technology and design, which is why when I left school, I headed in the direction of a Design Degree.
+                    <br><br> 
+                    However, design alone didn't really cut it as it were... there was something missing... 
+                    <br><br>
+                    Whilst on this journey of self discovery, I had worked in retail from a sales assisant, up to the heights of being part of the management team at Nike.
+                    <br><br>
+                    This has given me great <span>transferable skills</span>, such as listening and communication, team-work, time management, critical thinking and problem solving to name a few.
+                    <br><br>
+                    I am super excited to see what the future holds and to fully utilise the skills I have had the chance to develop over the past decade.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <div  class="flexContact" id="contactMe">
+        <div class="flexContactBio">            
+            <p>
+            If you would like to contact me regarding a collaboration or 
+            to hire me, please fill in the contact form.
+            </p>
+        </div>
+
+            
+        <form class="flexForm">      
+            <input name="name" type="text" class="feedback-input" placeholder="Name" required/>   
+            <input name="Subject" type="text" class="feedback-input" placeholder="Subject" required/>
+            <input name="email" type="text" class="feedback-input" placeholder="Email" required/>
+            <textarea name="text" class="feedback-input textArea" placeholder="Comment" required></textarea>
+            <input type="submit" class="submit" value="SUBMIT"/>
+        </form>
+    </div>
+    
+    <footer class="footer">        
+        <div class="links">
+            <div>            
+                <img class="icon iconOne" src="./Logo/Facebook.png" alt="Facebook link">
+                <a href="https://www.facebook.com/JBGWebDev"><p class="hover">Facebook</p></a>
+            </div>
+
+            <div>            
+                <img class="icon iconTwo" src="./Logo/GitHub-Mark-Light-64px.png" alt="GitHub link">
+                <a href="https://github.com/Jules-G-91"><p class="hover">GitHub</p></a>
+            </div>
+
+            <div>            
+                <img class="icon iconThree" src="./Logo/Instagram.png" alt="Instagram link">
+                <a href="https://www.instagram.com/jbgwebdev/"><p class="hover">Instagram</p></a>
+            </div>
+
+            <div>            
+                <img class="icon iconFour" src="./Logo/Linkedin.png" alt="LinkedIn link">
+                <a href="https://www.linkedin.com/in/julian-goodman-232682127/"><p class="hover">LinkedIn</p></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
