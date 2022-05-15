@@ -15,7 +15,7 @@
 
 <body id="home">
     <div class="topnav">
-        <a class="active"><img class="navJ" src="./Imgs/J-img.png" alt="An image of a J"></a>
+        <a class="active"><img class="navJ" src="./Imgs/Logo_Green" alt="An image of a J"></a>
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks">
             <a href="#work">Work</a>
@@ -63,6 +63,7 @@
 
 
     <div id="work" class="galleryContainerFlex">
+        <h3 class="section-title myWork">My Work</h3>
         <div class="galleryContainer">
             <div class="galleryImage image-one">
                 <img  src="https://picsum.photos/750/750" alt="Image">
@@ -92,7 +93,8 @@
 
 
     <section id="aboutMe">
-        <div class="aboutMe">        
+        <div class="aboutMe"> 
+            <h3 class="section-title myAbout">Get to know me</h3>       
             <div class="aboutMe-face">      
                 <img src="./Imgs/Face.jpg" alt="Image of Julian">   
             </div>
@@ -121,24 +123,24 @@
     </section>
 
 
-    <div  class="flexContact" id="contactMe">
-        <div class="flexContactBio">            
-            <p>
-            If you would like to contact me regarding a collaboration or 
-            to hire me, please fill in the contact form.
-            </p>
+    <section id="contactMe" class="flexContact">
+        <div class="blocktitle">
+            <h3 class="section-title myContact">Get in touch!</h3>
         </div>
-
-            
-        <form class="flexForm">      
-            <input name="name" type="text" class="feedback-input" placeholder="Name" required/>   
-            <input name="Subject" type="text" class="feedback-input" placeholder="Subject" required/>
-            <input name="email" type="text" class="feedback-input" placeholder="Email" required/>
-            <textarea name="text" class="feedback-input textArea" placeholder="Comment" required></textarea>
-            <input type="submit" class="submit" value="SUBMIT"/>
-        </form>
-    </div>
+        <div class="flexArea">
+            <div class="contactForm">
+                <form class="flexForm">      
+                    <input name="name" type="text" class="feedback-input" placeholder="Name" required/>   
+                    <input name="Subject" type="text" class="feedback-input" placeholder="Subject" required/>
+                    <input name="email" type="text" class="feedback-input" placeholder="Email" required/>
+                    <textarea name="text" class="feedback-input textArea" placeholder="Comment" required></textarea>
+                    <input type="submit" class="submit" value="SUBMIT"/>
+                </form>
+            </div>
+        </div>
+    </section>
     
+
     <footer class="footer">        
         <div class="links">
             <div>            

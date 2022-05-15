@@ -29,6 +29,10 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 /* To call var colors from root   color: var(--blue);
   background-color: var(--white); */
 
@@ -75,10 +79,22 @@ img {
     max-width: 100%;
 }
 
+.active {
+    color: var(--green);
+}
+
+.section-title{
+    color: var(--green);
+    text-transform: uppercase;
+    display: inline-block;
+    border-bottom: var(--green) solid 1px;
+}
+
 .topnav .navJ {
-    height: 16px;
+    height: 20px;
     width: auto;
     padding-left: 5vw;
+    padding-top: 2px;
 }
 
 .navWrapper {
@@ -105,9 +121,10 @@ img {
 }
 
 .navWrapper .j{
-    height: 30px;
-    padding-left: 3vw;
+    height: 32px;
+    padding: 5px 0 0vh 3vw;
 }
+
 
 .navWrapper .navItems ul{
     display: flex;
@@ -261,17 +278,23 @@ img {
     align-items: center;
     justify-content: center;
     background-color: var(--dark-grey);
-    min-height: 100vh;
+    min-height: 100%;
     height: 100%;
+    position: relative;
 }
 
 .galleryContainer{    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    padding: 0 2%;
-    padding: 50px 25px;
+    padding: 250px 25px 60px 25px;
     gap: 25px;
+}
+
+.galleryContainerFlex h3{
+    display: inline-block;
+    position: absolute;
+    top: 115px;
 }
 
 .galleryContainer .galleryImage{
@@ -436,20 +459,23 @@ img {
     }
 }
 
-
-@media all and (max-width: 420px){
-   
-}
-
 /* About */
 
 .aboutMe{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     height: 100%;
-    min-height: 800px;
-    padding: 60px 25px;
+    min-height: 700px;
+    padding: 250px 25px 60px 25px;
+    position: relative
+}
+
+.myAbout{
+    position: absolute;
+    top: 115px;
+    color: var(--dark-grey);
+    border-bottom: var(--dark-grey) solid 1px;
 }
 
 .aboutMe .aboutMe-face{
@@ -462,7 +488,7 @@ img {
 
 .aboutMe .aboutMe-face img{
     width: auto;
-    height: 500px;
+    height: 350px;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
@@ -476,12 +502,14 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .aboutMe .aboutMe-bio p{
-    width: 450px;
+    width: 100%;
     height: auto;
     border-radius: 45px;
+    text-align: justify;
 }
 
 #aboutMe > div > div.aboutMe-bio > p > span:nth-child(5), #aboutMe > div > div.aboutMe-bio > p > span:nth-child(16) {
@@ -495,8 +523,16 @@ img {
     }
 
     .aboutMe .aboutMe-face img{
-        height: 250px;
+        height: 450px;
         padding: 50px 0 80px 0;
+    }
+
+    .aboutMe .aboutMe-bio {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .aboutMe .aboutMe-bio p{
@@ -507,76 +543,100 @@ img {
 
 /* Contact */
 
-.flexContact {
+:focus {
+    outline: 2px solid var(--green);
+  }
+
+.flexContact{
     height: 100%;
-    min-height: 515px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: var(--dark-grey);
-    padding: 150px 25px;
+    width: 100vw;
+    padding: 115px 25px 60px 25px;
+    background: var(--dark-grey);
 }
 
-.flexContact p{
-    width: 315px;
-    height: auto;
+.blocktitle{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    padding-bottom: 150px;
 }
 
-.flexContact form{
+.flexContact .flexArea{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    padding: 0 0 50px 0;
+}
+
+.flexContact .contactForm .flexForm{
     display: flex;
     flex-direction: column;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.flexContact .contactForm .flexForm input{
+    border-radius: 25px;
+    background: var(--dark-grey);
+    margin-bottom: 30px;
+    padding: 15px;
     width: 400px;
-    max-width: 100%;
-}
-
-.flexContact .feedback-input{
-    margin: 5%;
-    padding: 10px;
+    max-width: 800px;
+    font-weight: bold;
+    letter-spacing: 1px;
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
-    letter-spacing: 2px;
-}
-
-.flexContact .textArea{
-    height: 150px;
-    resize: none;
-}
-
-.flexContact .submit{
-    margin: 2%;
-    padding: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Roboto Condensed', sans-serif;
-    letter-spacing: 2px;
-    border: none;
-    transition: 0.5s ease-in-out;
-    cursor: pointer;
-    background: var(--light-grey);
-    color: #fff;
-}
-
-.flexContact .submit:hover{
-    background-color: var(--grey);
+    border: var(--grey)  2px solid;
     color: var(--green);
 }
 
+.flexContact .contactForm .flexForm textarea{
+    border-radius: 25px;
+    background: var(--dark-grey);
+    margin-bottom: 30px;
+    padding: 15px;
+    width: 400px;
+    max-width: 800px;   
+    height: 200px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    border: var(--grey)  2px solid;
+    color: var(--green);
+}
+
+.flexContact .contactForm .flexForm .submit{
+    color: var(--green);
+    border: var(--green) 2px solid;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.flexContact .contactForm .flexForm .submit:hover{
+    color: #fff;
+    background: var(--green);
+    font-weight: bold;
+}
+
+
 
 @media all and (min-width: 320px) and (max-width: 1140px){
-    .flexContact {
+    .flexContact{
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .flexContact p{
-        padding-top: 15px;
-    }
-
-    .flexContact form{
-        padding-top: 50px;
-        padding-bottom: 50px;
+    .flexContact .flexArea{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -588,6 +648,7 @@ img {
     background-color: var(--grey);
     flex-direction: column;
     justify-content: center;
+    min-height: 100%;
 }
 
 .footer p{
