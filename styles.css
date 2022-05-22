@@ -222,7 +222,7 @@ img {
 }
 
 .showcase img{
-    height: 35vh;
+    height: 30vh;
     flex-basis: 1;
     padding-bottom: 25px;
 }
@@ -306,7 +306,9 @@ img {
 
 
 .galleryContainer .galleryImage:hover{
-
+    transform: scale(1.1);
+    z-index: 2;
+    opacity: 100%;
 }
 
 .image-one{
@@ -363,11 +365,6 @@ img {
         opacity: 0.8;
     }
     
-    
-    .galleryContainer .galleryImage:hover{
-    
-    }
-    
     .image-one{
         grid-column: 1/2;
         grid-row: 1/2;
@@ -421,11 +418,6 @@ img {
         transition: all 0.5s ease-in-out;
         cursor: pointer;
         opacity: 0.8;
-    }
-    
-    
-    .galleryContainer .galleryImage:hover{
-    
     }
     
     .image-one{
@@ -584,7 +576,7 @@ img {
     margin-bottom: 30px;
     padding: 15px;
     width: 400px;
-    max-width: 800px;
+    max-width: 80vw;
     font-weight: bold;
     letter-spacing: 1px;
     font-family: 'Roboto', sans-serif;
@@ -599,7 +591,7 @@ img {
     margin-bottom: 30px;
     padding: 15px;
     width: 400px;
-    max-width: 800px;   
+    max-width: 80vw;   
     height: 200px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -610,16 +602,18 @@ img {
 }
 
 .flexContact .contactForm .flexForm .submit{
-    color: var(--green);
+    color: var(--dark-grey);
     border: var(--green) 2px solid;
     transition: all 0.5s ease-in-out;
+    background: var(--green);
     cursor: pointer;
-    padding: 20px 25px;
+    padding: 0px 25px;
+    line-height: 45px;
 }
 
 .flexContact .contactForm .flexForm .submit:hover{
-    color: #fff;
-    background: var(--green);
+    color: var(--green);
+    background: var(--dark-grey);
     font-weight: bold;
 }
 
