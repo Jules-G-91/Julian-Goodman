@@ -440,7 +440,16 @@ img {
     background: rgb(0, 0, 0, 0.4);
 }
 
-
+.expandProject {
+    position: absolute;
+    color: #fff;
+    display: flex;
+    bottom: 10px;
+    left: 10px;
+    background-color: var(--dark-grey);
+    padding: 2px;
+    border-radius: 5px;
+}
 
 
 
