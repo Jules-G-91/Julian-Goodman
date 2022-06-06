@@ -299,13 +299,17 @@ img {
 
 .galleryContainer .galleryImage{
     height: 100%;
-    transition: all 0.5s ease-in-out;
     cursor: pointer;
     opacity: 0.8;
+    overflow: hidden;
+}
+
+.galleryContainer .galleryImage img {
+    transition: all 0.5s ease-in-out;
 }
 
 
-.galleryContainer .galleryImage:hover{
+.galleryContainer .galleryImage img:hover{
     transform: scale(1.1);
     z-index: 2;
     opacity: 100%;
@@ -340,6 +344,112 @@ img {
     grid-column:3/4;
     grid-row:2/3;
 }
+
+/* LightBox Code Start */
+
+.Preview-lightBox {
+    z-index: 5;
+    position: fixed;
+    max-width: 650px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.Preview-lightBox.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+    transition: all 0.3s ease;
+}
+
+.Preview-lightBox .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.Preview-lightBox .details .iconClose {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.Preview-lightBox .details p{
+    margin: 0 5px;
+} 
+
+.Preview-lightBox .details p.currentImg {
+    font-weight: 500;
+}
+
+.details .imageTitle {
+    display: flex;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.Preview-lightBox .imageBox {
+    display: flex;
+    width: 100%;
+}
+
+.imageBox .slide {
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.imageBox .slide.prev {
+    left: 0;
+}
+
+.imageBox .slide.next {
+    right: 0;
+}
+
+.Preview-lightBox .imageBox img {
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+}
+
+.shadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    background: rgb(0, 0, 0, 0.4);
+}
+
+
+
+
+
+
+
+
+
+
+/* LightBox Code End */
 
 @media all and (min-width: 1025px) and (max-width: 1600px){
     .galleryContainerFlex{
@@ -541,7 +651,6 @@ img {
 
 .flexContact{
     height: 100%;
-    width: 100vw;
     padding: 115px 25px 60px 25px;
     background: var(--dark-grey);
 }
