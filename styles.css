@@ -630,6 +630,7 @@ img {
     height: auto;
     border-radius: 45px;
     text-align: justify;
+    margin-top: 25px;
 }
 
 #aboutMe > div > div.aboutMe-bio > p > span:nth-child(5), #aboutMe > div > div.aboutMe-bio > p > span:nth-child(16) {
@@ -669,7 +670,6 @@ img {
 
 .flexContact{
     height: 100%;
-
     background: var(--dark-grey);
 }
 
@@ -680,9 +680,10 @@ img {
 }
 
 #contactMe #headerContact {
-    width: 250px;
+    width: 350px;
     height: auto;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: -30px;
 }
 
 .flexContact .flexArea{
@@ -776,6 +777,7 @@ img {
     background-color: var(--grey);
     flex-direction: column;
     justify-content: center;
+    height: 100vh;
     min-height: 100%;
 }
 
