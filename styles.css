@@ -789,7 +789,7 @@ img {
     background-color: var(--dark-grey);
     flex-direction: column;
     justify-content: center;
-    max-height: 100vh;
+    height: 100%;
 }
 
 .footer p{
