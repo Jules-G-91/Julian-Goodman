@@ -685,7 +685,7 @@ img {
 .flexContact{
     height: 100%;
     background: var(--grey);
-    padding: 25px 0 0 0;
+    padding: 25px 0 20px 0;
 }
 
 .blocktitle{
