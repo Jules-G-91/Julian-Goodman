@@ -50,7 +50,6 @@ html {
 body {
     line-height: 1.2;
     box-sizing: border-box;
-    margin: 0px auto;
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 2px;
@@ -85,65 +84,6 @@ img {
 
 /* Welcome to my Projects section */
 
-.projectsWelcome {
-    height: 100vh;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.projectsWelcome h1 {
-    font-weight: 900;
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-.projectsWelcome h2 {
-        font-weight: 900;
-        font-size: 3rem;
-        margin-bottom: 80px;
-}
-
-.hello {
-    font-size: 6rem;
-}
-
-.projectsWelcome p {
-    font-weight: 500;
-    font-size: 1.2rem;
-    margin-bottom: 200px;
-    max-width: 600px;
-}
-
-.fa .fa-chevron-down {
-    font-size: 2rem;
-}
-
-
-/* Welcome to my project */
-
-.fullSection {
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.fullSection .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.fullSection .hero img{
-    width: 800px;
-    height: auto;
-}
-
-.fullSection .hero p{
-    font-size: 1.2rem;
+.projects {
+    padding-top: 100px;
 }
