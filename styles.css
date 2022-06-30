@@ -296,7 +296,7 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    padding: 100px 25px 60px 25px;
+    padding: 25px 25px;
     gap: 25px;
 }
 
@@ -684,8 +684,8 @@ img {
 
 .flexContact{
     height: 100%;
-    padding: 75px 0 50px 0;
     background: var(--grey);
+    padding: 25px 0 0 0;
 }
 
 .blocktitle{
@@ -704,7 +704,6 @@ img {
     justify-content: space-evenly;
     align-items: center;
     height: 100%;
-    padding: 30px;
 }
 
 .flexContact .contactForm .flexForm{
@@ -772,6 +771,7 @@ img {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-top: 25px;
     }
 
     .flexContact .flexArea{
