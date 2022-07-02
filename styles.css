@@ -641,10 +641,10 @@ img {
 }
 
 .aboutMe .aboutMe-bio p{
-    width: 100%;
+    max-width: 80%;
     height: auto;
     border-radius: 45px;
-    text-align: justify;
+    text-align: left;
     margin-top: 25px;
 }
 
